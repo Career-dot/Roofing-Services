@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Roofing | Premium Residential & Commercial Roofing Services</title>
+    <meta name="description" content="Certified master roofing contractors providing premium residential and commercial roofing solutions, roof repair, full replacement, and storm response. Get a free quote today.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    
+    <!-- Header / Navbar -->
+<header class="main-header" id="main-header">
+    <div class="header-container">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo-brand" id="logo-brand">
+            <svg class="logo-icon" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 18L12 4L22 18H18.5L12 9L5.5 18H2Z"
+                    fill="var(--accent-color)" />
+                <path d="M7 18L12 11L17 18H14.5L12 14.5L9.5 18H7Z"
+                    fill="var(--accent-dark)" />
+            </svg>
+
+            <span class="logo-text">
+                Apex<span>Roofing</span>
+            </span>
+        </a>
+
+        <!-- Mobile Menu -->
+        <button class="mobile-nav-toggle"
+            id="mobile-nav-toggle"
+            aria-label="Toggle Menu"
+            aria-expanded="false">
+
+            <span class="hamburger"></span>
+        </button>
+
+        <!-- Navigation -->
+        <nav class="nav-menu" id="nav-menu">
+
+            <ul class="nav-list">
+
+                <li>
+                    <a href="services.html" class="nav-link">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="roofreplacement.html" class="nav-link">
+                        Why Choose Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="nav-link">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="testimal.html" class="nav-link">
+                        Testimonials
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <a href="contact.html"
+                    class="phone-link">
+
+                    <svg class="phone-icon"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none">
+
+                        <path d="M19.95 21C17.51 21 12.38 18.24 7.6 13.4C2.76 8.62 0 3.49 0 1.05C0 0.5 0.5 0 1.05 0H5.8C6.3 0 6.72 0.36 6.78 0.86L7.54 6.1C7.6 6.56 7.42 7.02 7.08 7.32L4.01 9.87C5.64 12.98 8.16 15.5 11.27 17.13L13.82 14.06C14.12 13.72 14.58 13.54 15.04 13.6L20.28 14.36C20.78 14.42 21.14 14.84 21.14 15.34V20.09C21.14 20.64 20.64 21 19.95 21Z"
+                            fill="currentColor"/>
+                    </svg>
+
+                    <span>(800) APEX-ROOF</span>
+
+                </a>
+
+                <a href="#quote-section"
+                    class="btn btn-accent btn-quote-header">
+                    Get Free Quote
+                </a>
+
+            </div>
+
+        </nav>
+
+    </div>
+</header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <!-- Hero Text Grid -->
+                <div class="hero-content">
+                    <h1 class="hero-title">Protect Your Home with Expert Roofing Solutions</h1>
+                    <p class="hero-subtitle">Certified master contractors providing premium residential and commercial roofing services with a lifetime integrity guarantee.</p>
+                    <div class="hero-buttons">
+                        <a href="#quote-section" class="btn btn-accent">Get Free Quote</a>
+                        <a href="tel:8002739766" class="btn btn-outline">Call Now</a>
+                    </div>
+                </div>
+
+                <!-- Hero Form Quote Card -->
+                <div class="hero-form-card" id="quote-section">
+                    <h3 class="form-title">Request a Quote</h3>
+                    <p class="form-subtitle">Average response time: 15 minutes.</p>
+                    <form class="quote-form" id="quote-form" novalidate>
+                        <div class="form-group">
+                            <label for="full-name" class="visually-hidden">Full Name</label>
+                            <input type="text" id="full-name" name="name" class="form-control" placeholder="Full Name" required>
+                            <span class="error-message" id="name-error">Please enter your name</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-address" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email-address" name="email" class="form-control" placeholder="Email Address" required>
+                            <span class="error-message" id="email-error">Please enter a valid email</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-type" class="visually-hidden">Service Type</label>
+                            <div class="select-wrapper">
+                                <select id="service-type" name="service" class="form-control" required>
+                                    <option value="" disabled selected hidden>Service Type</option>
+                                    <option value="repair">Roof Repair</option>
+                                    <option value="replacement">Full Replacement</option>
+                                    <option value="commercial">Commercial Roofing</option>
+                                    <option value="inspection">Roof Inspection</option>
+                                </select>
+                            </div>
+                            <span class="error-message" id="service-error">Please select a service type</span>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-submit" id="submit-quote">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section" id="stats-section">
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <!-- Stat Card 1 -->
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <!-- Stat Card 2 -->
+                    <div class="stat-card">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <!-- Stat Card 3 -->
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Licensed & Insured</div>
+                    </div>
+                    <!-- Stat Card 4 -->
+                    <div class="stat-card">
+                        <div class="stat-number">Life</div>
+                        <div class="stat-label">Lifetime Warranty</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="services-container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Roofing Expertise</h2>
+                    <p class="section-subtitle">From emergency repairs to complete commercial installations, we provide structural integrity at every level.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <!-- Roof repair icon -->
+
+
+                           <img class="service-icon" width="70" height="70" viewBox="0 0 24 24"  src="./images/2.png" alt="" srcset="">
+
+
+                        </div>
+                        <h3 class="service-card-title">Roof Repair</h3>
+                        <p class="service-card-desc">Expert diagnostic and leak repair services to extend the lifespan of your current roofing system.</p>
+                        <a href="#quote-section" class="service-link">
+                            <span>Learn More</span>
+                            
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <!-- Full replacement icon -->
+                              <img class="service-icon" width="70" height="70" viewBox="0 0 24 24"  src="./images/3.png" alt="" srcset="">
+                        </div>
+                        <h3 class="service-card-title">Full Replacement</h3>
+                        <p class="service-card-desc">Complete tear-off and installation using premium materials that withstand the toughest elements.</p>
+                        <a href="#quote-section" class="service-link">
+                            <span>Learn More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <!-- Commercial icon -->
+                           <img class="service-icon" width="70" height="70" viewBox="0 0 24 24"  src="./images/1.png" alt="" srcset="">
+                        </div>
+                        <h3 class="service-card-title">Commercial Roofing</h3>
+                        <p class="service-card-desc">Specialized solutions for flat roofs, TPO, and metal systems for large-scale commercial assets.</p>
+                        <a href="#quote-section" class="service-link">
+                            <span>Learn More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us / Trust Grid -->
+        <section class="why-us-section" id="why-us">
+            <div class="why-us-container">
+                <!-- Left Image Column -->
+                <div class="why-us-image-col">
+                    <div class="team-image-wrapper">
+                        <img src="images/roofing-team.jpg" alt="Apex Roofing professional roofing crew" class="team-img" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Right Copy Column -->
+                <div class="why-us-content-col">
+                    <span class="sub-tag">Why Apex Roofing</span>
+                    <h2 class="why-us-title">Unmatched Craftsmanship, Unrivaled Integrity</h2>
+
+                    <div class="trust-grid">
+                        <!-- Grid Item 1 -->
+                        <div class="trust-item">
+                            <div class="trust-icon-wrapper">
+                                <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="trust-text">
+                                <h4 class="trust-item-title">Manufacturer Certified</h4>
+                                <p class="trust-item-desc">Top-tier certification from GAF and Owens Corning.</p>
+                            </div>
+                        </div>
+
+                        <!-- Grid Item 2 -->
+                        <div class="trust-item">
+                            <div class="trust-icon-wrapper">
+                                <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="trust-text">
+                                <h4 class="trust-item-title">Safety First</h4>
+                                <p class="trust-item-desc">OSHA-compliant safety protocols on every single site.</p>
+                            </div>
+                        </div>
+
+                        <!-- Grid Item 3 -->
+                        <div class="trust-item">
+                            <div class="trust-icon-wrapper">
+                                <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="trust-text">
+                                <h4 class="trust-item-title">Fair Pricing</h4>
+                                <p class="trust-item-desc">Transparent estimates with no hidden project fees.</p>
+                            </div>
+                        </div>
+
+                        <!-- Grid Item 4 -->
+                        <div class="trust-item">
+                            <div class="trust-icon-wrapper">
+                                <svg class="trust-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="trust-text">
+                                <h4 class="trust-item-title">Rapid Response</h4>
+                                <p class="trust-item-desc">24/7 emergency dispatch for storm damage calls.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        </section>
+
+        <!-- Proven Excellence (Portfolio Before-After Slider) -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="portfolio-container">
+                <div class="portfolio-header">
+                    <div>
+                        <span class="sub-tag">Portfolio</span>
+                        <h2 class="section-title">Proven Excellence</h2>
+                        <p class="section-subtitle">A gallery of our standard-setting architectural transformations.</p>
+                    </div>
+                    <a href="#quote-section" class="btn btn-outline btn-dark-outline">View Portfolio</a>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Before/After Slider Container -->
+                    <div class="before-after-container" id="before-after-slider">
+                        <div class="image-before" style="background-image: url('images/old-roof-before.jpg');"></div>
+                        <div class="image-after" id="after-image-layer" style="background-image: url('images/new-roof-after.jpg');"></div>
+                        <!-- Handle -->
+                        <div class="slider-handle" id="slider-handle">
+                            <div class="handle-button">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 7L3 12L8 17M16 7L21 12L16 17" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- Labels -->
+                        <span class="slider-label before-label">Before</span>
+                        <span class="slider-label after-label">After</span>
+                    </div>
+
+                    <!-- Stacked Side Images -->
+                    <div class="portfolio-gallery-side">
+                        <div class="gallery-card">
+                            <img src="images/commercial-roof.jpg" alt="Commercial roofing replacement flat roof" class="gallery-img">
+                            <div class="gallery-info">
+                                <h4>Commercial Systems</h4>
+                                <p>Flat roof insulation with premium TPO</p>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <img src="images/brown-shingle-house.jpg" alt="Luxury residential roof brown shingles" class="gallery-img">
+                            <div class="gallery-info">
+                                <h4>Residential Homes</h4>
+                                <p>Full asphalt shingle replacement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Seamless Process -->
+        <section class="process-section">
+            <div class="process-container">
+                <div class="section-header text-light">
+                    <h2 class="section-title">Our Seamless Process</h2>
+                    <p class="section-subtitle">A straightforward, stress-free path to a secure home.</p>
+                </div>
+                
+                <div class="process-flow">
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-num">01</div>
+                        <h4 class="step-title">Inspection</h4>
+                        <p class="step-desc">Comprehensive analysis of your current roofing system.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="step-num">02</div>
+                        <h4 class="step-title">Estimate</h4>
+                        <p class="step-desc">Detailed proposal with multiple material and pricing options.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="step-num">03</div>
+                        <h4 class="step-title">Installation</h4>
+                        <p class="step-desc">Fast, clean execution with premium materials and minimal disruption.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="step-num">04</div>
+                        <h4 class="step-title">Final Audit</h4>
+                        <p class="step-desc">Post-job walkthrough and quality checks to ensure absolute excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Our Clients Say -->
+        <section class="reviews-section" id="testimonials">
+            <div class="reviews-container">
+                <div class="section-header">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Read about our clients' experiences with our roofing services.</p>
+                </div>
+                
+                <div class="reviews-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                        </div>
+                        <p class="review-text">"I was blown away by Apex's professional behavior. They came out on time, finished the roof replacement ahead of schedule, and left the site spotless. Outstanding job!"</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">DM</div>
+                            <div>
+                                <h5 class="reviewer-name">David Matthews</h5>
+                                <p class="reviewer-role">Property Manager, Residential</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                        </div>
+                        <p class="review-text">"Fast response, accurate estimate, and top-tier craftsmanship. The crew worked safely and efficiently. Highly recommended for any home repairs!"</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">SJ</div>
+                            <div>
+                                <h5 class="reviewer-name">Sarah Jenkins</h5>
+                                <p class="reviewer-role">Homeowner</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                        </div>
+                        <p class="review-text">"The team replaced our commercial building roof in record time. Excellent communication, competitive pricing, and a perfect finish. Outstanding service!"</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">MT</div>
+                            <div>
+                                <h5 class="reviewer-name">Michael Thorne</h5>
+                                <p class="reviewer-role">Director, Commercial Assets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Areas -->
+        <section class="service-areas-section">
+            <div class="service-areas-container">
+                <div class="areas-content-col">
+                    <span class="sub-tag">Coverage</span>
+                    <h2 class="section-title text-left">Service Areas</h2>
+                    <p class="section-subtitle text-left">We proudly serve residential and commercial properties across these core regions:</p>
+                    
+                    <ul class="areas-list">
+                        <li>
+                            <svg class="area-bullet-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                            </svg>
+                            <span>Roofing City</span>
+                        </li>
+                        <li>
+                            <svg class="area-bullet-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                            </svg>
+                            <span>Shingle District</span>
+                        </li>
+                        <li>
+                            <svg class="area-bullet-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                            </svg>
+                            <span>Contractor Park</span>
+                        </li>
+                        <li>
+                            <svg class="area-bullet-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                            </svg>
+                            <span>Highlands Valley</span>
+                        </li>
+                        <li>
+                            <svg class="area-bullet-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                            </svg>
+                            <span>Slate Valley</span>
+                        </li>
+                        <li>
+                            <svg class="area-bullet-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+                            </svg>
+                            <span>TPO Zone</span>
+                        </li>
+                    </ul>
+
+                    <div class="hq-card">
+                        <h4 class="hq-card-title">Regional Headquarters</h4>
+                        <p class="hq-card-address">100 Apex Way, Suite A<br>Roofing City, RC 12345</p>
+                        <a href="tel:8002739766" class="hq-card-phone">(800) APEX-ROOF</a>
+                    </div>
+                </div>
+                
+                <div class="areas-map-col">
+                    <!-- Interactive Styled Mock SVG Map -->
+                    <div class="mock-map-container">
+                        <svg class="mock-map-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" rx="16" fill="#f8fafc"/>
+                            
+                            <!-- Road grids -->
+                            <line x1="60" y1="0" x2="60" y2="300" stroke="#f1f5f9" stroke-width="3"/>
+                            <line x1="180" y1="0" x2="180" y2="300" stroke="#f1f5f9" stroke-width="3"/>
+                            <line x1="300" y1="0" x2="300" y2="300" stroke="#f1f5f9" stroke-width="3"/>
+                            <line x1="0" y1="90" x2="400" y2="90" stroke="#f1f5f9" stroke-width="3"/>
+                            <line x1="0" y1="210" x2="400" y2="210" stroke="#f1f5f9" stroke-width="3"/>
+                            
+                            <!-- Shaded Regions -->
+                            <path d="M40 80C90 60 160 80 180 120C200 160 150 240 100 230C50 220 20 160 40 80Z" fill="rgba(242, 102, 34, 0.07)" stroke="var(--accent-color)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                            <path d="M210 100C260 80 320 110 340 150C360 190 310 250 260 240C210 230 190 170 210 100Z" fill="rgba(30, 41, 59, 0.04)" stroke="var(--primary-color)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                            
+                            <!-- Map Pin Dots -->
+                            <g class="map-pin" transform="translate(110, 140)">
+                                <circle r="12" fill="var(--accent-color)" opacity="0.15"/>
+                                <circle r="5" fill="var(--accent-color)"/>
+                            </g>
+                            <g class="map-pin" transform="translate(270, 170)">
+                                <circle r="12" fill="var(--accent-color)" opacity="0.15"/>
+                                <circle r="5" fill="var(--accent-color)"/>
+                            </g>
+                            <g class="map-pin" transform="translate(310, 120)">
+                                <circle r="12" fill="var(--primary-color)" opacity="0.15"/>
+                                <circle r="5" fill="var(--primary-color)"/>
+                            </g>
+                            <g class="map-pin" transform="translate(70, 190)">
+                                <circle r="12" fill="var(--primary-color)" opacity="0.15"/>
+                                <circle r="5" fill="var(--primary-color)"/>
+                            </g>
+                            
+                            <!-- Legend box -->
+                            <g transform="translate(245, 230)">
+                                <rect width="140" height="55" rx="8" fill="#ffffff" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.04))" stroke="#e2e8f0" stroke-width="1"/>
+                                <circle cx="15" cy="18" r="4" fill="var(--accent-color)"/>
+                                <text x="26" y="21" font-family="var(--font-body)" font-size="9" fill="var(--primary-color)" font-weight="600">Active Service Area</text>
+                                <circle cx="15" cy="38" r="4" fill="var(--primary-color)"/>
+                                <text x="26" y="41" font-family="var(--font-body)" font-size="9" fill="var(--primary-color)" font-weight="600">HQ Office</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roofing FAQs Accordion -->
+        <section class="faqs-section">
+            <div class="faqs-container">
+                <div class="section-header">
+                    <h2 class="section-title">Roofing FAQs</h2>
+                </div>
+                
+                <div class="accordion-group">
+                    <!-- Q1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>How long does a typical roof replacement take?</span>
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <div class="accordion-panel">
+                            <div class="accordion-body">
+                                <p>Most residential roof replacements are completed in 1 to 2 days, depending on the size of the home and the complexity of the architectural features.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Q2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>Do you offer emergency storm damage services?</span>
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <div class="accordion-panel">
+                            <div class="accordion-body">
+                                <p>Yes, we provide 24/7 emergency dispatch for tarping and urgent repairs to prevent secondary water damage following major storm events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Q3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span>What kind of warranties do you provide?</span>
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <div class="accordion-panel">
+                            <div class="accordion-body">
+                                <p>We offer manufacturer-backed lifetime material warranties along with our own Apex Integrity Workmanship Guarantee, which covers labor for 25 years.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready to secure your future? (CTA) -->
+        <section class="cta-banner-section">
+            <div class="cta-banner-container">
+                <div class="cta-banner-card">
+                    <h2 class="cta-banner-title">Ready to secure your future?</h2>
+                    <p class="cta-banner-subtitle">Schedule your free, no-obligation roof inspection today with our master contractors.</p>
+                    <div class="cta-banner-buttons">
+                        <a href="#quote-section" class="btn btn-accent">Get Your Free Quote</a>
+                        <a href="tel:8002739766" class="btn btn-outline">Call (800) APEX-ROOF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer class="main-footer" id="footer">
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand-info">
+            <a href="index.html" class="logo-brand footer-logo">
+                <svg class="logo-icon" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 18L12 4L22 18H18.5L12 9L5.5 18H2Z" fill="var(--accent-color)" />
+                    <path d="M7 18L12 11L17 18H14.5L12 14.5L9.5 18H7Z" fill="var(--accent-dark)" />
+                </svg>
+
+                <span class="logo-text">
+                    Apex<span>Roofing</span>
+                </span>
+            </a>
+
+            <p class="footer-desc">
+                Premium roofing systems and repair services for commercial and residential
+                buildings. Quality craftsmanship you can trust.
+            </p>
+
+            <div class="footer-social-icons">
+
+                <a href="#" class="social-btn" aria-label="Facebook">
+                    <!-- Facebook SVG -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Twitter">
+                    <!-- Twitter SVG -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-links-group">
+            <h5 class="footer-heading">Services</h5>
+
+            <ul class="footer-links">
+                <li><a href="#services">Roof Repair</a></li>
+                <li><a href="#services">Roof Replacement</a></li>
+                <li><a href="#services">Commercial Systems</a></li>
+                <li><a href="#services">Inspections</a></li>
+            </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-links-group">
+            <h5 class="footer-heading">Resources</h5>
+
+            <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#why-us">Why Choose Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-links-group footer-newsletter">
+
+            <h5 class="footer-heading">Newsletter</h5>
+
+            <p class="newsletter-text">
+                Subscribe to our newsletter for the latest roofing tips and seasonal specials.
+            </p>
+
+            <form class="newsletter-form" id="newsletter-form" novalidate>
+
+                <div class="newsletter-input-group">
+
+                    <label for="newsletter-email" class="visually-hidden">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        class="form-control newsletter-input"
+                        placeholder="Your email address"
+                        required>
+
+                    <button
+                        type="submit"
+                        class="btn btn-accent newsletter-btn"
+                        aria-label="Subscribe">
+
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5 12H19M19 12L13 6M19 12L13 18"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+
+                </div>
+
+                <span class="error-message" id="newsletter-error">
+                    Please enter a valid email
+                </span>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p class="copyright">
+                © 2026 Apex Roofing Services. All rights reserved.
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+    <!-- Success Modal Overlay -->
+    <div class="success-modal-overlay" id="success-modal">
+        <div class="success-modal-card">
+            <div class="success-icon-wrapper">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="currentColor"/>
+                </svg>
+            </div>
+            <h4 class="modal-title">Request Received!</h4>
+            <p class="modal-text">Thank you, <strong id="user-display-name"></strong>. Our expert estimators have received your inquiry for <strong id="user-display-service"></strong>. We will contact you at <strong id="user-display-email"></strong> within 15 minutes.</p>
+            <button class="btn btn-accent btn-modal-close" id="modal-close-btn">Close Window</button>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>

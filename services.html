@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Apex Roofing – Residential, Commercial & Emergency</title>
+    <meta name="description" content="Explore Apex Roofing's full range of services — from premium roof replacement and commercial TPO systems to 24/7 emergency storm response and preventative maintenance.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+    <!-- ===== HEADER (shared) ===== -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-brand" id="logo-brand">
+                <svg class="logo-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 18L12 4L22 18H18.5L12 9L5.5 18H2Z" fill="var(--accent-color)"/>
+                    <path d="M7 18L12 11L17 18H14.5L12 14.5L9.5 18H7Z" fill="var(--accent-dark)"/>
+                </svg>
+                <span class="logo-text">Apex<span>Roofing</span></span>
+            </a>
+
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="services.html" class="nav-link active-link">Services</a></li>
+                    <li><a href="index.html#why-us" class="nav-link">Why Choose Us</a></li>
+                    <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                    <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="contact.html" class="phone-link" id="header-phone">
+                        <svg class="phone-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.95 21C17.51 21 12.38 18.24 7.6 13.4C2.76 8.62 0 3.49 0 1.05C0 0.5 0.5 0 1.05 0H5.8C6.3 0 6.72 0.36 6.78 0.86L7.54 6.1C7.6 6.56 7.42 7.02 7.08 7.32L4.01 9.87C5.64 12.98 8.16 15.5 11.27 17.13L13.82 14.06C14.12 13.72 14.58 13.54 15.04 13.6L20.28 14.36C20.78 14.42 21.14 14.84 21.14 15.34V20.09C21.14 20.64 20.64 21 19.95 21Z" fill="currentColor"/>
+                        </svg>
+                        <span>(800) APEX-ROOF</span>
+                    </a>
+                    <a href="index.html#quote-section" class="btn btn-accent btn-quote-header">Get Free Quote</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== SERVICES HERO / PAGE HEADER ===== -->
+        <section class="svc-hero" id="svc-hero">
+            <div class="svc-hero-overlay"></div>
+            <!-- Floating animated shapes -->
+            <div class="svc-hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="svc-hero-container">
+                <div class="svc-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <span>Services</span>
+                </div>
+                <div class="svc-hero-tag">
+                    <span class="tag-dot"></span>
+                    <span>Craftsmanship &amp; Integrity</span>
+                </div>
+                <h1 class="svc-hero-title">Our Comprehensive<br><span class="svc-title-gradient">Roofing Services</span></h1>
+                <p class="svc-hero-subtitle">From minor leak repairs to large-scale commercial installations, Apex Roofing provides precision-engineered solutions tailored to protect your most valuable assets.</p>
+                <div class="svc-hero-stats">
+                    <div class="svc-stat">
+                        <span class="svc-stat-num" data-target="6">0</span>
+                        <span class="svc-stat-label">Service Categories</span>
+                    </div>
+                    <div class="svc-stat-divider"></div>
+                    <div class="svc-stat">
+                        <span class="svc-stat-num" data-target="5000">0</span><span class="svc-stat-suffix">+</span>
+                        <span class="svc-stat-label">Projects Done</span>
+                    </div>
+                    <div class="svc-stat-divider"></div>
+                    <div class="svc-stat">
+                        <span class="svc-stat-num" data-target="24">0</span><span class="svc-stat-suffix">/7</span>
+                        <span class="svc-stat-label">Emergency Response</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FILTER TABS + SERVICES GRID ===== -->
+        <section class="svc-main-section" id="services">
+            <div class="svc-main-container">
+
+                <!-- Filter Tabs -->
+                <div class="filter-tabs-wrapper">
+                    <div class="filter-tabs" id="filter-tabs" role="tablist" aria-label="Service Categories">
+                        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true" id="tab-all">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                            All Services
+                        </button>
+                        <button class="filter-tab" data-filter="residential" role="tab" aria-selected="false" id="tab-residential">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="currentColor" stroke-width="2"/></svg>
+                            Residential
+                        </button>
+                        <button class="filter-tab" data-filter="commercial" role="tab" aria-selected="false" id="tab-commercial">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21V11h8v10" stroke="currentColor" stroke-width="2"/></svg>
+                            Commercial
+                        </button>
+                        <button class="filter-tab" data-filter="emergency" role="tab" aria-selected="false" id="tab-emergency">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                            Emergency
+                        </button>
+                        <button class="filter-tab" data-filter="maintenance" role="tab" aria-selected="false" id="tab-maintenance">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            Maintenance
+                        </button>
+                        <!-- Sliding underline indicator -->
+                        <div class="tab-slider" id="tab-slider"></div>
+                    </div>
+                    <div class="filter-result-count" id="filter-result-count">Showing <strong>6</strong> services</div>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="svc-cards-grid" id="svc-cards-grid">
+
+                    <!-- Card 1: Premium Roof Replacement (Residential) -->
+                    <article class="svc-card" data-category="residential" data-aos>
+                        <div class="svc-card-image">
+                            <img src="images/brown-shingle-house.jpg" alt="Premium Roof Replacement – residential shingle roofing" loading="lazy">
+                            <div class="svc-card-image-overlay"></div>
+                            <div class="svc-card-badges">
+                                <span class="badge badge-residential">Residential</span>
+                                <span class="badge badge-price">$$ – $$$</span>
+                            </div>
+                            <div class="svc-card-hover-cta">
+                                <a href="index.html#quote-section" class="btn btn-accent">Get a Quote</a>
+                            </div>
+                        </div>
+                        <div class="svc-card-body">
+                            <div class="svc-card-meta">
+                                <span class="svc-card-tag tag-residential">RESIDENTIAL</span>
+                            </div>
+                            <h2 class="svc-card-title">Premium Roof Replacement</h2>
+                            <p class="svc-card-desc">Complete architectural shingle or metal roof installations designed for 50+ years of durability and curb appeal. GAF Master Elite certified.</p>
+                            <ul class="svc-card-features">
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>50-year architectural shingles</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Full tear-off &amp; clean-up</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Lifetime workmanship warranty</li>
+                            </ul>
+                            <a href="index.html#quote-section" class="svc-learn-more">
+                                Learn More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: TPO & Flat Roofing (Commercial) -->
+                    <article class="svc-card" data-category="commercial" data-aos>
+                        <div class="svc-card-image">
+                            <img src="images/commercial-roof.jpg" alt="TPO & Flat Roofing – commercial flat roof" loading="lazy">
+                            <div class="svc-card-image-overlay"></div>
+                            <div class="svc-card-badges">
+                                <span class="badge badge-commercial">Commercial</span>
+                                <span class="badge badge-price">$$$</span>
+                            </div>
+                            <div class="svc-card-hover-cta">
+                                <a href="index.html#quote-section" class="btn btn-accent">Get a Quote</a>
+                            </div>
+                        </div>
+                        <div class="svc-card-body">
+                            <div class="svc-card-meta">
+                                <span class="svc-card-tag tag-commercial">COMMERCIAL</span>
+                            </div>
+                            <h2 class="svc-card-title">TPO &amp; Flat Roofing</h2>
+                            <p class="svc-card-desc">Energy-efficient flat roof solutions for industrial complexes, warehouses, and commercial storefronts with reflective membranes.</p>
+                            <ul class="svc-card-features">
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>TPO, EPDM &amp; PVC systems</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Energy Star certified materials</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Minimal business disruption</li>
+                            </ul>
+                            <a href="index.html#quote-section" class="svc-learn-more">
+                                Learn More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Storm Damage Repair (Emergency) -->
+                    <article class="svc-card svc-card--featured" data-category="emergency" data-aos>
+                        <div class="svc-card-image">
+                            <img src="images/hero-bg.jpg" alt="Storm Damage Repair – emergency roofing" loading="lazy">
+                            <div class="svc-card-image-overlay"></div>
+                            <div class="svc-card-badges">
+                                <span class="badge badge-emergency">⚡ Emergency</span>
+                                <span class="badge badge-response">24/7 Response</span>
+                            </div>
+                            <div class="svc-card-hover-cta">
+                                <a href="tel:8002739766" class="btn btn-accent">Call Now</a>
+                            </div>
+                        </div>
+                        <div class="svc-card-body">
+                            <div class="svc-card-meta">
+                                <span class="svc-card-tag tag-emergency">⚡ EMERGENCY</span>
+                            </div>
+                            <h2 class="svc-card-title">Storm Damage Repair</h2>
+                            <p class="svc-card-desc">Immediate response for hail, fallen debris, and structural damage following severe weather events. We tarp, secure, and restore fast.</p>
+                            <ul class="svc-card-features">
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>On-site within 2 hours</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Insurance claim assistance</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Emergency tarping &amp; board-up</li>
+                            </ul>
+                            <a href="tel:8002739766" class="svc-learn-more svc-learn-more--urgent">
+                                Call Emergency Line
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Preventative Care (Maintenance) -->
+                    <article class="svc-card" data-category="maintenance" data-aos>
+                        <div class="svc-card-image">
+                            <img src="images/roofing-team.jpg" alt="Preventative Maintenance – roofing inspection crew" loading="lazy">
+                            <div class="svc-card-image-overlay"></div>
+                            <div class="svc-card-badges">
+                                <span class="badge badge-maintenance">Maintenance</span>
+                                <span class="badge badge-price">$</span>
+                            </div>
+                            <div class="svc-card-hover-cta">
+                                <a href="index.html#quote-section" class="btn btn-accent">Schedule Now</a>
+                            </div>
+                        </div>
+                        <div class="svc-card-body">
+                            <div class="svc-card-meta">
+                                <span class="svc-card-tag tag-maintenance">MAINTENANCE</span>
+                            </div>
+                            <h2 class="svc-card-title">Preventative Care</h2>
+                            <p class="svc-card-desc">Complete inspections, gutter cleaning, and minor weather touch-ups to extend your roof's lifespan and maintain manufacturer warranties.</p>
+                            <ul class="svc-card-features">
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Bi-annual inspection packages</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Drone &amp; thermal imaging</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Detailed written reports</li>
+                            </ul>
+                            <a href="index.html#quote-section" class="svc-learn-more">
+                                Learn More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: Seamless Gutters (Residential / Commercial) -->
+                    <article class="svc-card" data-category="residential" data-aos>
+                        <div class="svc-card-image">
+                            <div class="svc-card-image-placeholder svc-card-image-placeholder--gutters">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6h20v3H2zM4 9v10h16V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 14h8M8 17h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <div class="svc-card-image-overlay"></div>
+                            <div class="svc-card-badges">
+                                <span class="badge badge-residential">Systems</span>
+                                <span class="badge badge-price">$$</span>
+                            </div>
+                            <div class="svc-card-hover-cta">
+                                <a href="index.html#quote-section" class="btn btn-accent">Get a Quote</a>
+                            </div>
+                        </div>
+                        <div class="svc-card-body">
+                            <div class="svc-card-meta">
+                                <span class="svc-card-tag tag-residential">SYSTEMS</span>
+                            </div>
+                            <h2 class="svc-card-title">Seamless Gutters</h2>
+                            <p class="svc-card-desc">Custom-fit drainage solutions available in various colors and materials to complement your architecture and prevent water damage.</p>
+                            <ul class="svc-card-features">
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Seamless aluminum &amp; copper</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Gutter guard systems</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Color-matched to your home</li>
+                            </ul>
+                            <a href="index.html#quote-section" class="svc-learn-more">
+                                Learn More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 6: Insulation & Ventilation (Residential / Efficiency) -->
+                    <article class="svc-card" data-category="residential" data-aos>
+                        <div class="svc-card-image">
+                            <div class="svc-card-image-placeholder svc-card-image-placeholder--insulation">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C9 3 6.5 5 6 8C4 8.5 2.5 10 2.5 12.5C2.5 15 4.5 17 7 17H17C19.5 17 21.5 15.2 21.5 13C21.5 10.8 19.8 9 17.5 8.5C17 5.7 14.8 3 12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 17v4M9 21h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </div>
+                            <div class="svc-card-image-overlay"></div>
+                            <div class="svc-card-badges">
+                                <span class="badge badge-maintenance">Efficiency</span>
+                                <span class="badge badge-price">$$</span>
+                            </div>
+                            <div class="svc-card-hover-cta">
+                                <a href="index.html#quote-section" class="btn btn-accent">Get a Quote</a>
+                            </div>
+                        </div>
+                        <div class="svc-card-body">
+                            <div class="svc-card-meta">
+                                <span class="svc-card-tag tag-maintenance">EFFICIENCY</span>
+                            </div>
+                            <h2 class="svc-card-title">Insulation &amp; Ventilation</h2>
+                            <p class="svc-card-desc">Energy-optimizing attic solutions that reduce heating costs and prevent moisture buildup, ice dams, and premature material degradation.</p>
+                            <ul class="svc-card-features">
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Spray foam &amp; blown-in insulation</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Ridge &amp; soffit venting</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Reduces energy bills 20-30%</li>
+                            </ul>
+                            <a href="index.html#quote-section" class="svc-learn-more">
+                                Learn More
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Empty state (shown when filter returns nothing) -->
+                <div class="svc-empty-state" id="svc-empty-state" hidden>
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="currentColor" stroke-width="1.5"/></svg>
+                    <h3>No services found</h3>
+                    <p>Try a different filter above.</p>
+                    <button class="btn btn-accent" id="reset-filter-btn">Show All Services</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== INSPECTION CTA BANNER ===== -->
+        <section class="inspect-cta-section" id="inspection-cta">
+            <div class="inspect-cta-container">
+                <div class="inspect-cta-card">
+                    <!-- Decorative roof SVG -->
+                    <div class="inspect-cta-deco">
+                        <svg class="deco-roof-svg" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 80L100 5L200 80" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+                            <path d="M20 80L100 25L180 80" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+                            <path d="M40 80L100 40L160 80" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <div class="inspect-cta-content">
+                        <div class="inspect-cta-icon-wrap">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h2 class="inspect-cta-title">Unsure of your roof's health?</h2>
+                        <p class="inspect-cta-subtitle">Send us a professional 24-point structural inspection today. We identify issues before they become expensive repairs.</p>
+                        <div class="inspect-cta-trust-row">
+                            <div class="inspect-trust-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" fill="currentColor"/></svg>
+                                <div>
+                                    <strong>Fit Certification</strong>
+                                    <span>Official documentation for insurance</span>
+                                </div>
+                            </div>
+                            <div class="inspect-trust-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 2v3M16 2v3M3 8h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                <div>
+                                    <strong>Quick Scheduling</strong>
+                                    <span>Appointments available within 24hr</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inspect-cta-buttons">
+                            <a href="index.html#quote-section" class="btn btn-accent inspect-btn-primary" id="schedule-inspection-btn">
+                                Schedule Inspection Now
+                            </a>
+                            <a href="#" class="btn inspect-btn-secondary" id="sample-report-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="currentColor" stroke-width="2"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                                View Sample Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY CHOOSE APEX FOR YOUR SERVICE ===== -->
+        <section class="svc-why-section">
+            <div class="svc-why-container">
+                <div class="svc-why-header">
+                    <span class="sub-tag">Why Apex</span>
+                    <h2 class="section-title">Every Service, Done Right</h2>
+                    <p class="section-subtitle">Our core values drive every nail, every seam, and every customer conversation.</p>
+                </div>
+                <div class="svc-why-grid">
+                    <div class="svc-why-item" data-aos>
+                        <div class="svc-why-icon-ring">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>Licensed &amp; Insured</h3>
+                        <p>Fully licensed master contractors with $5M liability coverage on every project.</p>
+                    </div>
+                    <div class="svc-why-item" data-aos>
+                        <div class="svc-why-icon-ring">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>Premium Materials</h3>
+                        <p>We only use manufacturer-certified materials from GAF, Owens Corning and CertainTeed.</p>
+                    </div>
+                    <div class="svc-why-item" data-aos>
+                        <div class="svc-why-icon-ring">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <h3>On-Time Delivery</h3>
+                        <p>We finish 97% of projects on schedule, respecting your time and minimizing disruption.</p>
+                    </div>
+                    <div class="svc-why-item" data-aos>
+                        <div class="svc-why-icon-ring">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622C17.176 19.29 21 14.591 21 9c0-1.078-.122-2.13-.354-3.136z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <h3>25-Year Warranty</h3>
+                        <p>Apex's Integrity Workmanship Guarantee covers all labor for a full 25 years.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="main-footer" id="about">
+        <div class="footer-container">
+            <div class="footer-brand-info">
+                <a href="index.html" class="logo-brand footer-logo">
+                    <svg class="logo-icon" width="36" height="36" viewBox="0 0 24 24" fill="none">
+                        <path d="M2 18L12 4L22 18H18.5L12 9L5.5 18H2Z" fill="var(--accent-color)"/>
+                        <path d="M7 18L12 11L17 18H14.5L12 14.5L9.5 18H7Z" fill="var(--accent-dark)"/>
+                    </svg>
+                    <span class="logo-text">Apex<span>Roofing</span></span>
+                </a>
+                <p class="footer-desc">Providing elite residential and commercial roofing solutions with a commitment to transparency and structure integrity.</p>
+                <div class="footer-social-icons">
+                    <a href="#" class="social-btn" aria-label="Facebook">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12Z" fill="currentColor"/></svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="Twitter">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" fill="currentColor"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links-group">
+                <h5 class="footer-heading">Solutions</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Residential</a></li>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">Emergency Repairs</a></li>
+                    <li><a href="#">Gutter Systems</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-group">
+                <h5 class="footer-heading">Company</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Licensing</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-group footer-newsletter">
+                <h5 class="footer-heading">Newsletter</h5>
+                <p class="newsletter-text">Get seasonal maintenance tips and exclusive offers.</p>
+                <form class="newsletter-form" id="newsletter-form" novalidate>
+                    <div class="newsletter-input-group">
+                        <label for="newsletter-email" class="visually-hidden">Email Address</label>
+                        <input type="email" id="newsletter-email" placeholder="Your Email" class="form-control newsletter-input" required>
+                        <button type="submit" class="btn btn-accent newsletter-btn" aria-label="Subscribe">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                    </div>
+                    <span class="error-message" id="newsletter-error">Please enter a valid email</span>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright">&copy; 2026 Apex Roofing Services. Structural Integrity Guaranteed.</p>
+                <div class="footer-legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>
