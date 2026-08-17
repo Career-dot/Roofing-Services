@@ -42,6 +42,7 @@ img { display: block; max-width: 100%; }
   margin-bottom: 1.75rem;
   position: relative;
   padding-left: 18px;
+  background-color:#d9642c;
 }
 .section-title::before {
   content: "";
@@ -124,7 +125,7 @@ img { display: block; max-width: 100%; }
   position: relative;
   z-index: 3;
   padding: 0 clamp(1.5rem, 6vw, 5rem);
-  max-width: 680px;
+  max-width: 880px;
 }
 
 .hero-content h1 {

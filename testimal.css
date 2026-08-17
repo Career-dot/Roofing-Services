@@ -141,7 +141,7 @@ footer{background:var(--ink);color:#fff;margin-top:90px;padding:70px 24px 0;}
 .footer-bottom a{color:#888;margin-left:20px;}
 .copyright {
   margin:0;
-  text-align:left;
+  text-align:center;
   width:100%;
   font-size:14px;
   color:rgba(255,255,255,0.7);

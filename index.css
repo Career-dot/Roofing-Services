@@ -318,7 +318,7 @@ img {
 
 .hero-content {
     color: #ffffff;
-    max-width: 650px;
+    max-width: 850px;
 }
 
 .hero-title {
@@ -574,6 +574,7 @@ select.form-control {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: hsl(22, 90%, 55%);
 }
 
 .service-card-desc {
@@ -582,6 +583,7 @@ select.form-control {
     margin-bottom: 2rem;
     line-height: 1.6;
     flex-grow: 1;
+    color: white;
 }
 
 .service-link {
@@ -631,6 +633,7 @@ select.form-control {
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
+     
 }
 
 .team-image-wrapper::before {
@@ -646,7 +649,7 @@ select.form-control {
 
 .team-img {
     width: 100%;
-    height: 600px;
+    height: 400px;
     object-fit: cover;
     transition: var(--transition-smooth);
 }
@@ -788,20 +791,22 @@ select.form-control {
 
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .footer-bottom-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
 }
 
 .copyright {
     font-size: 0.85rem;
+
 }
 
 /* Success Modal Overlay Styling */
@@ -941,7 +946,7 @@ select.form-control {
 /* Before After Slider Styling */
 .before-after-container {
     position: relative;
-    height: 520px;
+    height: 350px;
     width: 100%;
     border-radius: var(--radius-md);
     overflow: hidden;
@@ -1040,12 +1045,12 @@ select.form-control {
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
-    height: 247px;
+    height: 170px;
 }
 
 .gallery-img {
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     transition: var(--transition-smooth);
 }
@@ -1651,7 +1656,7 @@ select.form-control {
     }
 
     .before-after-container {
-        height: 450px;
+        height: 300px;
     }
 
     /* Service Areas Responsive */
@@ -1817,7 +1822,7 @@ select.form-control {
 
     /* Slider mobile shink */
     .before-after-container {
-        height: 320px;
+        height: 220px;
     }
 
     .slider-label {
